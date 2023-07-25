@@ -29,10 +29,10 @@ def contador_de_letras(cadena_de_texto):
   for letra in cadena_de_texto:
     if letra in dict_letras:
       # aqui indice_de_letra va a apuntar al indice 1, luego al 2, 3, 4...
-      dict_letras[letra] += 1
+      dict_letras[letra] += 1 # cada que encuentre una letra igual sumara 1
 
     else:
-      # aqui como al principio es 0 
+      # aqui significa que solo encontro 1 letra igual en el parametro cadena_de_texto
       dict_letras[letra] = 1
 
   return dict_letras
