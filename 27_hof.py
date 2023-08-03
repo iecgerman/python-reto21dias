@@ -30,10 +30,11 @@ print(resultado)  # Output: 8
 
 resultado = aplicar_operacion(resta, 10, 7)
 print(resultado)  # Output: 3
-En este ejemplo, tenemos una función aplicar_operacion que toma una función func y dos argumentos a y b. La función aplicar_operacion llama a func pasándole a y b como argumentos y devuelve el resultado.
+
+"""En este ejemplo, tenemos una función aplicar_operacion que toma una función func y dos argumentos a y b. La función aplicar_operacion llama a func pasándole a y b como argumentos y devuelve el resultado.
 
 Luego, definimos las funciones suma y resta que realizan operaciones de suma y resta, respectivamente.
 
 Finalmente, llamamos a aplicar_operacion pasando las funciones suma y resta junto con los argumentos necesarios. Dependiendo de la función que se pase, se realiza la operación correspondiente y se obtiene el resultado.
 
-Todo esto y más lo puedes aprender en el Curso de Python: Comprehensions, Funciones y Manejo de Errores
+Todo esto y más lo puedes aprender en el Curso de Python: Comprehensions, Funciones y Manejo de Errores"""
