@@ -1,4 +1,4 @@
-# NO LE ENTIENDO NI MAIZ
+# Crea un planificador de tareas usando closures
 
 def crear_planificador_de_tareas():
   tareas = []
