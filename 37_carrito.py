@@ -1,4 +1,57 @@
-# se encuentra en app
+# se encuentra en app37 y carpeta carritoCompras en español
+
+"""
+En este desafío debes crear un sistema de carrito de compras.
+
+Dentro del playground tendrás un archivo producto.py que será la clase base(Padre) y será abstracta. Deberás crear las clases hijas Articulo y Servicio que extenderán de Producto.
+
+La clase Articulo deberá implementar el método agregarACarrito() de manera que retorne el string "Agregando x unidades del artículo x al carrito", donde x es el nombre y la cantidad del producto. Por otro lado, la clase Servicio deberá implementar el método agregarACarrito() de manera que retorne el string "Agregando el servicio x al carrito", donde x es el nombre del servicio.
+
+Además, debes crear la clase Carrito que será el carrito de compras y tendrá los siguientes métodos:
+
+def agregarProducto(self, producto): este método agregará un producto al final de la lista de compras y deberá llamar al método product.agregarACarrito() de cada producto o servicio.
+
+def borrarProducto(self, producto): este método recibirá un producto y lo eliminará de la lista de productos
+
+def calcularTotal(self): este método calculará el total de los productos agregados y lo devolverá.
+
+def obtenerProductos(self): este método devolerá el array de los productos que contiene el carrito.
+
+Ejemplo 1
+
+Input:
+
+libro = Articulo("Libro", 100, 2)
+curso = Servicio("Curso", 120, 1)
+
+carrito = Carrito()
+carrito.agregarProducto(libro)
+carrito.agregarProducto(curso)
+total = carrito.calcularTotal()
+print(total)
+
+Output:
+
+Agregando 2 unidades del artículo Libro al carrito
+Agregando el servicio Curso al carrito
+320
+
+Ejemplo 2
+
+Input:
+
+libro = Articulo("Libro", 100, 2);
+curso = Servicio("Curso", 120, 1);
+
+carrito = Carrito();
+carrito.agregarProducto(libro);
+carrito.agregarProducto(curso);
+carrito.borrarProducto(libro);
+carrito.calcularTotal();
+
+
+"""
+
 
 """
 En este desafío debes crear un sistema de carrito de compras.
@@ -21,13 +74,13 @@ Ejemplo 1
 
 Input:
 
-book = Article("Libro", 100, 2);
-course = Service("Curso", 120, 1);
+libro = Articulo("Libro", 100, 2);
+curso = Servicio("Curso", 120, 1);
 
-cart = Cart();
-cart.addProduct(book);
-cart.addProduct(course);
-cart.calculateTotal();
+carrito = Carrito();
+carrito.addProduct(book);
+carrito.addProduct(course);
+carrito.calculateTotal();
 
 Output:
 
@@ -40,7 +93,7 @@ Ejemplo 2
 Input:
 
 book = Article("Libro", 100, 2);
-course = Service("Curso", 120, 1);
+curso = Servicio("Curso", 120, 1);
 
 cart = Cart();
 cart.addProduct(book);
