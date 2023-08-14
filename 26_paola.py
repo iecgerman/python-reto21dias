@@ -46,3 +46,16 @@ response = filter_user_messages([
 print(response)
   
 """📢NOTA: filter recibe dos parámetros, la función que realiza el filtrado y la lista de los elementos que se van a filtrar. Es importante notar que al mandar el parámetro filter_by_user va sin paréntesis () por que nosotros no estamos ejecutando la función, sino que filter internamente lo hace, a esto se le llama higher order functions y se describen en la lectura que sigue."""
+
+
+"""
+def my_map(list, func):
+  new_list = []
+  for item in list:
+    new_list.append(func(item))
+  
+  return new_list
+
+response = my_map([1, 2, 3, 4], lambda num: num * 2)
+print(response)
+"""
